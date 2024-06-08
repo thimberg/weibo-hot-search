@@ -30,6 +30,7 @@ const words: Word[] = Array.from(matches).map((x) => ({
 }));
 
 const yyyyMMdd = format(new Date(), "yyyy-MM-dd");
+const yyyy = format(new Date(), "yyyy");
 const fullPath = join("raw", `${yyyyMMdd}.json`);
 
 let wordsAlreadyDownload: Word[] = [];

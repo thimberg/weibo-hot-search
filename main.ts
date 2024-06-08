@@ -49,5 +49,5 @@ await Deno.writeTextFile("./README.md", readme);
 
 // 更新 archives
 const archiveText = createArchive(queswordsAll, yyyyMMdd);
-const archivePath = "archives/" + `${yyyy}` + `${yyyyMMdd}.md`;
+const archivePath = "archives/" + `${yyyy}` + "/" + `${yyyyMMdd}.md`;
 await Deno.writeTextFile(archivePath, archiveText);
